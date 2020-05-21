@@ -32,6 +32,18 @@
 
         .bread-title {
             text-align: center;
+            &::after{
+                position: absolute;
+                left:86px;
+                top:38px;
+                content:'';
+                width:10px;
+                height:10px;
+                // background-color: red;
+                border-top: 9px solid #fff;
+                border-left:12px solid transparent;
+                border-right:12px solid transparent;
+            }
         }
 
         .weather {

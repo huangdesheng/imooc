@@ -29,12 +29,6 @@ export default class Header extends React.Component {
         })
     }
     render() {
-        // http://api.map.baidu.com/telematics/v3/weather?location=广东&output=json&ak=4RyQSmvEpmHGRiIRcoyEyzDpZLwBi11y
-        // http://api.map.baidu.com/telematics/v3/weather?location=foshan&output=json&ak=7etNqQsTRg4j4UdfbGKtI3XIqujbA2Qp
-        // http://api.map.baidu.com/reverse_geocoding/v3/?output=json&coordtype=wgs84ll&location=31
-        // https://restapi.amap.com/v3/weather/weatherInfo?key=962128c46f91fc0e04bd891a54b59b38&city=310115
-        // https://restapi.amap.com/v3/weather/weatherInfo?city=310115&output=JSON&key=fe7cccdafaafdd1938433695e0d9cf08
-        // https://restapi.amap.com/v3/config/district?keywords=北京&subdistrict=2&key=c6c3f3d131c790f8d1469da70ea07f11
         return (
             <div className="header">
                 <Row className="header-top">
