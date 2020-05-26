@@ -15,6 +15,15 @@
                 title:'弹框',
                 key:'/admin/ui/modals'
             },
+            {
+                title:'loadings',
+                key:'/admin/ui/loadings'
+            },
+            {
+                title:'通知',
+                key:'/admin/ui/notifications'
+
+            }
         ]
 
     },
