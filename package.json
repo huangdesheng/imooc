@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ant-design/icons": "^4.1.0",
     "antd": "^4.2.4",
     "autoprefixer": "7.1.6",
     "axios": "^0.19.2",

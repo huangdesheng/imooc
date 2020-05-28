@@ -1,9 +1,11 @@
 import React from 'react'
+import {NavLink} from 'react-router-dom'
 import menuList from '../../resource/menuConfig'
 import logo from './../../assets/images/xq-logo.png'
 import { Menu } from 'antd';
 import './index.less'
 const { SubMenu } = Menu;
+
 export default class NavLeft extends React.Component {
     state = {}
     componentWillMount() {
@@ -19,14 +21,16 @@ export default class NavLeft extends React.Component {
                     {this.renderMenu(item.children)}
                 </SubMenu>
             }
-            return <Menu.Item key={item.key}>{item.title}</Menu.Item>
+            return <Menu.Item key={item.key}>
+                <NavLink to={item.key}>{item.title}</NavLink>
+            </Menu.Item>
         })
     }
     render() {
         return (
             <div>
                 <div className="logo">
-                    <img src={logo}></img>
+                    <img src={logo} alt="加载中...." />
                     Imooc MS
                 </div>
                 <Menu theme="dark">
