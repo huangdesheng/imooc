@@ -21,7 +21,17 @@
            title: '通知',
            key: '/admin/ui/notifications'
 
+<<<<<<< HEAD
          }
        ]
+=======
+            },
+            {
+                title:'标签',
+                key:'/admin/ui/tabs'
+
+            }
+        ]
+>>>>>>> 8be53f2... 表格知识
 
        export default menuList;

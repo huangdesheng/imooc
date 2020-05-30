@@ -8,6 +8,7 @@ import Modals from './pages/ui/modals'
 import Nomatch from './pages/nomatch'
 import Loadings from './pages/ui/loadings'
 import Notification from './pages/ui/notifications'
+import BasicTables from './pages/tables/basicTables'
 export default class IRouter extends Component{
     render() {
         return(
@@ -21,6 +22,8 @@ export default class IRouter extends Component{
                             <Route path='/admin/ui/modals' component={Modals}></Route>
                             <Route path='/admin/ui/loadings' component={Loadings}></Route>
                             <Route path="/admin/ui/notifications" component={Notification}></Route>
+                            <Route path="/admin/table" component={BasicTables}></Route>
+                            
                             <Route component={Nomatch}></Route>
                             </Switch>
                         </Admin>
