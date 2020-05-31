@@ -29,7 +29,7 @@ export default class Mocks {
                             }
                         ],
                         pageNum:1,
-                        pageSize:10,
+                        pageSize:4,
                         total:20,
                     }
                    

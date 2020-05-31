@@ -21,17 +21,26 @@
            title: '通知',
            key: '/admin/ui/notifications'
 
-<<<<<<< HEAD
          }
        ]
-=======
-            },
-            {
-                title:'标签',
-                key:'/admin/ui/tabs'
-
-            }
-        ]
->>>>>>> 8be53f2... 表格知识
-
+     },
+     {
+       title:'表单',
+       key:'/admin/form',
+       children:[
+         {
+           title:'登录',
+           key:'/admin/form/login'
+         },
+         {
+           title:'注册',
+           key:'/admin/form/register'
+         }
+       ]
+     },
+     {
+       title:'表格',
+       key:'/admin/table'
+     }
+    ]
        export default menuList;

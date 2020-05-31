@@ -9,6 +9,8 @@ import Nomatch from './pages/nomatch'
 import Loadings from './pages/ui/loadings'
 import Notification from './pages/ui/notifications'
 import BasicTables from './pages/tables/basicTables'
+import UserLogin from './pages/form/login'
+import Register from './pages/form/register'
 export default class IRouter extends Component{
     render() {
         return(
@@ -18,13 +20,14 @@ export default class IRouter extends Component{
                     <Route path="/admin" render={()=>
                         <Admin>
                             <Switch>
-                            <Route path='/admin/ui/buttons' component={Buttons}></Route>
-                            <Route path='/admin/ui/modals' component={Modals}></Route>
-                            <Route path='/admin/ui/loadings' component={Loadings}></Route>
-                            <Route path="/admin/ui/notifications" component={Notification}></Route>
-                            <Route path="/admin/table" component={BasicTables}></Route>
-                            
-                            <Route component={Nomatch}></Route>
+                                <Route path='/admin/ui/buttons' component={Buttons}></Route>
+                                <Route path='/admin/ui/modals' component={Modals}></Route>
+                                <Route path='/admin/ui/loadings' component={Loadings}></Route>
+                                <Route path="/admin/ui/notifications" component={Notification}></Route>
+                                <Route path="/admin/table" component={BasicTables}></Route>
+                                <Route path="/admin/form/register" component={Register}></Route>
+                                <Route pagt="/admin/form/login" component={UserLogin}></Route>
+                                <Route component={Nomatch}></Route>
                             </Switch>
                         </Admin>
                     } />
