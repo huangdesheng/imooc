@@ -1,10 +1,11 @@
- const menuList = [{
+ const menuList = [
+    {
        title: '首页',
        key: '/admin/home'
      },
      {
        title: 'UI',
-       key: '/admin/ui',
+       key:'/admin/ui',
        children: [{
            title: '按钮',
            key: '/admin/ui/buttons'
@@ -41,6 +42,10 @@
      {
        title:'表格',
        key:'/admin/table'
+     },
+     {
+       title:'城市管理',
+       key:'/admin/city'
      }
     ]
-       export default menuList;
+     export default menuList;
